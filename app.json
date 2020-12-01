@@ -1,0 +1,26 @@
+{
+  "id": "9219c175-37ed-4724-bd31-b656abccdca3",
+  "name": "CSD Seminar",
+  "publisher": "D. E. Veloper ltd.",
+  "version": "17.0.0.0",
+  "brief": "Seminar Management",
+  "description": "This is my awesome extension for Seminar Management - Buy me!",
+  "privacyStatement": "",
+  "EULA": "http://ba-consult.dk/downloads/warning.txt",
+  "help": "",
+  "url": "",
+  "logo": "./Images/logo.png",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "17.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://CSDSeminar.com/help/",
+  "showMyCode": true,
+  "runtime": "6.0"
+}
