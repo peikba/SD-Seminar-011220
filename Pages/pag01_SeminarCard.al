@@ -5,6 +5,7 @@ page 50101 "CSD Seminar Card"
 {
     PageType = Card;
     SourceTable = "CSD Seminar";
+    Caption = 'Seminar Card';
 
     layout
     {
@@ -12,7 +13,7 @@ page 50101 "CSD Seminar Card"
         {
             group(General)
             {
-                field("No."; REc."No.")
+                field("No."; Rec."No.")
                 {
                     AssistEdit = true;
                     ApplicationArea = All;
@@ -89,7 +90,7 @@ page 50101 "CSD Seminar Card"
                 action("Co&mments")
                 {
                     RunObject = page "CSD Seminar Comment Sheet";
-                    RunPageLink = "Table Name" = const (Seminar), "No." = field ("No.");
+                    RunPageLink = "Table Name" = const(Seminar), "No." = field("No.");
                     Image = Comment;
                     Promoted = true;
                     PromotedIsBig = true;

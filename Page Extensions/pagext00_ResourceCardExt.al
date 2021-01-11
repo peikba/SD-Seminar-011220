@@ -38,7 +38,7 @@ pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
 
     trigger OnOpenPage();
     begin
-        ShowMaxField := (Rec.Type = Rec.Type::Machine);
+        ShowMaxField := (Type = Type::Machine);
         CurrPage.Update(false);
     end;
 
