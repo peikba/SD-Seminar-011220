@@ -27,7 +27,7 @@ tableextension 50100 "CSD ResourceExt" extends Resource
             Caption = 'Maximum Participants';
             DataClassification = AccountData;
         }
-        field(50103; "CSD Quantity Per Day"; Decimal)
+        field(50103; "CSD Quantity Per Day"; Integer)
         {
             Caption = 'Quantity Per Day';
             DataClassification = AccountData;

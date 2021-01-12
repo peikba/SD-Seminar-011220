@@ -10,16 +10,24 @@
   "help": "",
   "url": "",
   "logo": "./Images/logo.png",
-  "dependencies": [],
+  "dependencies": [
+    {
+      "id": "e97bbbc7-16b6-470b-9428-376baa778970",
+      "name": "Send remittance advice by email",
+      "publisher": "Microsoft",
+      "version": "17.1.18256.18792"
+    }
+  ],
   "screenshots": [],
   "platform": "17.0.0.0",
   "application": "17.0.0.0",
   "idRanges": [
     {
       "from": 50100,
-      "to": 50149
+      "to": 99999
     }
   ],
+  "features": ["TranslationFile"],
   "contextSensitiveHelpUrl": "https://CSDSeminar.com/help/",
   "showMyCode": true,
   "runtime": "6.0"
