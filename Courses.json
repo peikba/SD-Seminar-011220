@@ -1,0 +1,98 @@
+[
+    {
+        "odata.metadata": "http://navtraining:7048/BC140_NavService/OData/$metadata#Courses",
+        "value": [
+            {
+                "odata.etag": "W/\"'28%3Bml8BAAJ7BTgAMAAwADQAMAAAAAAA6%3B3632570%3B'\"",
+                "Code": "80040",
+                "Name": "Installation & Configuration",
+                "Description": "Basic Knowledge on Installation & Configuration",
+                "Type": "Remote Training",
+                "Duration": "2",
+                "Price": "1000",
+                "Active": false,
+                "Difficulty": 5,
+                "Passing_Rate": 75,
+                "ETag": "28;ml8BAAJ7BTgAMAAwADQAMAAAAAAA6;3632570;"
+            },
+            {
+                "odata.etag": "W/\"'28%3Bml8BAAJ7BTgAMAAwADQAMQAAAAAA6%3B3832510%3B'\"",
+                "Code": "80041",
+                "Name": "Finance XXX",
+                "Description": "Basic Knowledge on Finance",
+                "Type": "Instructor Led",
+                "Duration": "3",
+                "Price": "1500",
+                "Active": false,
+                "Difficulty": 7,
+                "Passing_Rate": 80,
+                "ETag": "28;ml8BAAJ7BTgAMAAwADQAMQAAAAAA6;3832510;"
+            },
+            {
+                "odata.etag": "W/\"'28%3Bml8BAAJ7BTgAMAAwADQAMgAAAAAA6%3B3632610%3B'\"",
+                "Code": "80042",
+                "Name": "C/Side Introduction",
+                "Description": "Introduction to Programming",
+                "Type": "Instructor Led",
+                "Duration": "5",
+                "Price": "2500",
+                "Active": false,
+                "Difficulty": 8,
+                "Passing_Rate": 80,
+                "ETag": "28;ml8BAAJ7BTgAMAAwADQAMgAAAAAA6;3632610;"
+            },
+            {
+                "odata.etag": "W/\"'28%3Bml8BAAJ7BTgAMAAwADQAMwAAAAAA6%3B3632620%3B'\"",
+                "Code": "80043",
+                "Name": "Introduction",
+                "Description": "Introduction to Microsoft Dynamics NAV",
+                "Type": "Remote Training",
+                "Duration": "2",
+                "Price": "1000",
+                "Active": false,
+                "Difficulty": 4,
+                "Passing_Rate": 60,
+                "ETag": "28;ml8BAAJ7BTgAMAAwADQAMwAAAAAA6;3632620;"
+            },
+            {
+                "odata.etag": "W/\"'28%3Bml8BAAJ7BTgAMAAwADQAOQAAAAAA6%3B3632630%3B'\"",
+                "Code": "80049",
+                "Name": "Application Setup",
+                "Description": "Basic Knowledge on Application Setup",
+                "Type": "e-Learning",
+                "Duration": "2",
+                "Price": "1000",
+                "Active": false,
+                "Difficulty": 5,
+                "Passing_Rate": 65,
+                "ETag": "28;ml8BAAJ7BTgAMAAwADQAOQAAAAAA6;3632630;"
+            },
+            {
+                "odata.etag": "W/\"'28%3Bml8BAAJ7BTgAMAAwADUAMAAAAAAA6%3B3632540%3B'\"",
+                "Code": "80050",
+                "Name": "Business Intelligence",
+                "Description": "Basic Knowledge on Business Intelligence",
+                "Type": "e-Learning",
+                "Duration": "1",
+                "Price": "500",
+                "Active": false,
+                "Difficulty": 5,
+                "Passing_Rate": 65,
+                "ETag": "28;ml8BAAJ7BTgAMAAwADUAMAAAAAAA6;3632540;"
+            },
+            {
+                "odata.etag": "W/\"'28%3Bml8BAAJ7BTgAMAAwADUANQAAAAAA6%3B3632650%3B'\"",
+                "Code": "80055",
+                "Name": "C/Side Solution Development",
+                "Description": "Advanced in Programming",
+                "Type": "Instructor Led",
+                "Duration": "5",
+                "Price": "2500",
+                "Active": false,
+                "Difficulty": 10,
+                "Passing_Rate": 75,
+                "ETag": "28;ml8BAAJ7BTgAMAAwADUANQAAAAAA6;3632650;"
+            }
+        ]
+    }
+]

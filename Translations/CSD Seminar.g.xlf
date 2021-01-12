@@ -78,6 +78,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Setup - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4035078560 - Action 3365063573 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Courses</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page CSD Seminar Setup - Action Import Courses - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1023874429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -522,6 +527,31 @@
           <source>Registered</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table CSD Seminar Charge - Field Registered - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2085644145 - Method 1665861916 - NamedType 1692196564" size-unit="char" translate="yes" xml:space="preserve">
+          <source>application/json; charset=utf-8</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Import Courses Rest - Method OnRun - NamedType AcceptTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2085644145 - Method 1665861916 - NamedType 1815440819" size-unit="char" translate="yes" xml:space="preserve">
+          <source>application/x-www-form-urlencoded</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Import Courses Rest - Method OnRun - NamedType ContentTypeTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2085644145 - Method 1665861916 - NamedType 1534734304" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Webservice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Import Courses Rest - Method OnRun - NamedType UseridTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2085644145 - Method 1665861916 - NamedType 1270945001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Webservice!23</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Import Courses Rest - Method OnRun - NamedType PasswordTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2085644145 - Method 1665861916 - NamedType 1368883901" size-unit="char" translate="yes" xml:space="preserve">
+          <source>http://NAVTraining:7048/BC140_NavService/OData/Company('CRONUS%20International%20Ltd.')/Courses</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit CSD Import Courses Rest - Method OnRun - NamedType EndPoint</note>
         </trans-unit>
         <trans-unit id="Page 1944624769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Seminar Card</source>

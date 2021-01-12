@@ -30,7 +30,27 @@ page 50100 "CSD Seminar Setup"
             }
         }
     }
-
+    actions
+    {
+        area(Processing)
+        {
+            action("Import Courses")
+            {
+                Caption = 'Import Courses';
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                PromotedOnly = true;
+                Image = ImportCodes;
+                trigger OnAction()
+                var
+                    ImportCourses: Codeunit "CSD Import Courses Rest";
+                begin
+                    ImportCourses.Run();
+                end;
+            }
+        }
+    }
     trigger OnOpenPage();
     begin
         if not Rec.get() then begin
