@@ -182,7 +182,7 @@ table 50132 "CSD Seminar Ledger Entry"
             var
                 UserMgt: Codeunit "User Management";
             begin
-                usermgt.LookupUserID("User Id");
+                usermgt.DisplayUserInformation("User Id");
             end;
         }
     }
@@ -195,10 +195,6 @@ table 50132 "CSD Seminar Ledger Entry"
         key(key2; "Document No.", "Posting Date")
         {
         }
-    }
-
-    fieldgroups
-    {
     }
 }
 
