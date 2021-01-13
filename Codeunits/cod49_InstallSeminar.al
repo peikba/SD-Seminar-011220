@@ -1,4 +1,4 @@
-codeunit 50149 "CSD Install Seminar"
+codeunit 50149 "CSD InstallSeminar"
 {
     Subtype = Install;
 
