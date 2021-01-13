@@ -27,15 +27,15 @@ codeunit 50147 "CSD Import Courses Rest"
         if not ResponseMessage.IsSuccessStatusCode then
             error('The web service returned an error message:\\' + 'Status code: %1\' + 'Description: %2', ResponseMessage.HttpStatusCode, ResponseMessage.ReasonPhrase);
         ResponseMessage.Content.ReadAs(JsonText);
-        if not JsonObject.ReadFrom(JsonText) then
-            Error('Invalid response, expected an JSON array as root object');
-        CoursesToken := SelectJsonToken(JsonObject, 'Value');
-        CoursesTxt := Format(CoursesToken);
-        Error('%1', CoursesTxt);
+        JsonText := CopyStr(JsonText, strpos(JsonText, '['));
+        JsonText := CopyStr(JsonText, 1, StrLen(JsonText) - 1);
+        if not JsonArray.ReadFrom(JsonText) then
+            Error('Invalid response, expected an JSON Array object');
         foreach jsonToken in JsonArray do begin
             JsonObject := JsonToken.AsObject;
             InsertCourse();
         end;
+        Message(FinishedTxt, Counter);
     end;
 
     local procedure InsertCourse();
@@ -43,21 +43,26 @@ codeunit 50147 "CSD Import Courses Rest"
         TokenName: Text[50];
         LowerCurrCode: Text[10];
         Seminar: Record "CSD Seminar";
+        FieldText: Text;
 
     begin
-        Error('%1', JsonObject);
         TokenName := 'Code';
-        Seminar."No." := format(SelectJsonToken(JsonObject, TokenName));
+        FieldText := delchr(format(SelectJsonToken(JsonObject, TokenName)), '=', '"');
+        Seminar."No." := FieldText;
         TokenName := 'Name';
-        Seminar.Name := format(SelectJsonToken(JsonObject, TokenName));
+        FieldText := delchr(format(SelectJsonToken(JsonObject, TokenName)), '=', '"');
+        Seminar.Name := FieldText;
         TokenName := 'Duration';
-        evaluate(Seminar."Seminar Duration", format(SelectJsonToken(JsonObject, TokenName)));
+        FieldText := delchr(format(SelectJsonToken(JsonObject, TokenName)), '=', '"');
+        evaluate(Seminar."Seminar Duration", FieldText);
         TokenName := 'Price';
-        evaluate(Seminar."Seminar Price", format(SelectJsonToken(JsonObject, TokenName)));
+        FieldText := delchr(format(SelectJsonToken(JsonObject, TokenName)), '=', '"');
+        evaluate(Seminar."Seminar Price", FieldText);
         Seminar.Validate("Gen. Prod. Posting Group", 'MISC');
         Seminar."Minimum Participants" := 4;
         Seminar."Maximum Participants" := 12;
-        if Seminar.Insert then;
+        if Seminar.Insert then
+            Counter += 1;
     end;
 
     procedure SelectJsonToken(JsonObject: JsonObject; Path: text) JsonToken: JsonToken
@@ -83,4 +88,6 @@ codeunit 50147 "CSD Import Courses Rest"
         JsonObject: JsonObject;
         JsonArray: JsonArray;
         JsonText: text;
+        Counter: Integer;
+        FinishedTxt: Label '%1 Courses inserted';
 }
