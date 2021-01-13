@@ -1783,6 +1783,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report CSD Seminar Reg Part. List - ReportLabel SeminarRegistrationHeaderCap</note>
         </trans-unit>
+        <trans-unit id="PageExtension 634963693 - Action 3389481820 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Download Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension CSD Extend Item Card - Action DownloadPicture - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3747827805 - Control 2205917413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1580859378">
           <source>Room</source>
           <note from="Developer" annotates="general" priority="2"></note>

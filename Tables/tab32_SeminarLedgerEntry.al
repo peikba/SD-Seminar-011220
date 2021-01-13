@@ -100,7 +100,9 @@ table 50132 "CSD Seminar Ledger Entry"
         field(15; "Participant Name"; Text[50])
         {
             Caption = 'Participant Name';
-            DataClassification = AccountData;
+            FieldClass = FlowField;
+            CalcFormula = lookup(Contact.Name where("No." = field("Participant Contact No.")));
+            Editable = false;
         }
         field(16; Chargeable; Boolean)
         {
@@ -111,13 +113,13 @@ table 50132 "CSD Seminar Ledger Entry"
         field(17; "Room Resource No."; Code[20])
         {
             Caption = 'Room Resource No.';
-            TableRelation = Resource where (Type = const (Machine));
+            TableRelation = Resource where(Type = const(Machine));
             DataClassification = AccountData;
         }
         field(18; "Instructor Resource No."; Code[20])
         {
             Caption = 'Instructor Resource No.';
-            TableRelation = Resource where (Type = const (Person));
+            TableRelation = Resource where(Type = const(Person));
             DataClassification = AccountData;
         }
         field(19; "Starting Date"; Date)
@@ -146,7 +148,7 @@ table 50132 "CSD Seminar Ledger Entry"
         field(23; "Source No."; Code[20])
         {
             Caption = 'Source No.';
-            TableRelation = if ("Source Type" = const (Seminar)) "CSD Seminar";
+            TableRelation = if ("Source Type" = const(Seminar)) "CSD Seminar";
             DataClassification = AccountData;
         }
         field(24; "Journal Batch Name"; Code[10])
@@ -175,7 +177,7 @@ table 50132 "CSD Seminar Ledger Entry"
         }
         field(28; "User Id"; code[50])
         {
-            TableRelation = user where ("User Name" = field ("User Id"));
+            TableRelation = user where("User Name" = field("User Id"));
             ValidateTableRelation = false;
             DataClassification = AccountData;
             trigger OnLookup();
@@ -195,9 +197,9 @@ table 50132 "CSD Seminar Ledger Entry"
         key(key2; "Document No.", "Posting Date")
         {
         }
-        key(key3;"Bill-to Customer No.")
+        key(key3; "Bill-to Customer No.", "Seminar No.")
         {
-            
+
         }
     }
 }
