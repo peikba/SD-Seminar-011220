@@ -195,6 +195,10 @@ table 50132 "CSD Seminar Ledger Entry"
         key(key2; "Document No.", "Posting Date")
         {
         }
+        key(key3;"Bill-to Customer No.")
+        {
+            
+        }
     }
 }
 
